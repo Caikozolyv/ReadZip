@@ -19,7 +19,22 @@ class FileFormType extends AbstractType
                 'label' => 'Ajouter un fichier :',
                 'constraints' => [
                     new File([
-                      'maxSize' => '2048k'
+                      'maxSize' => '2048k',
+                        'mimeTypes' => [
+                            'application/pdf',
+                            'application/x-pdf',
+                            'text/csv',
+                            'application/msword',
+                            'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+                            'image/gif',
+                            'image/jpeg',
+                            'image/png',
+                            'application/json',
+                            'application/vnd.oasis.opendocument.text',
+                            'application/x-rar-compressed',
+                            'application/x-tar',
+                            'application/zip'
+                        ]
                     ])
                 ],
             ]);
