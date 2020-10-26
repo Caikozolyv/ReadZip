@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {{ form_start(form, {'action': 'display' }) }}
+        {{ form_label(form.file) }}<br><br>
+        {{ form_widget(form.file) }}<br><br>
+        <input type="submit" value="Lire le fichier">
+    {{ form_end(form) }}
+{% endblock %}
